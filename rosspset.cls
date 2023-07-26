@@ -146,7 +146,7 @@
     \ifx\@organization\undefined
       {Ross Mathematics, Number Theory}
     \else
-      {\large\MakeUppercase{\@solver}}
+      {\large\MakeUppercase{\@organization}}
     \fi\par
     \ifx\@titlequote\undefined
         {}
