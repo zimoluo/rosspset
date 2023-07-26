@@ -212,7 +212,7 @@ Here are some terminology questions to discuss with your family:
   {\sffamily\bfseries}
   {0em}
   {}
-  [{\titlerule[0.025pc]}]
+  [{\titlerule[0.025pc]\\}]
 
 \renewcommand{\thesection}{}
 
