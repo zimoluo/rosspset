@@ -1,0 +1,84 @@
+\documentclass[11pt]{rosspset} 
+
+
+\psetnum{20}
+\titlequote{Die ganzen Zahlen hat Gott gemacht, alles andere ist Menschenwerk.}
+\quotesource{Leopold Kronecker (1823 - 1891)}
+
+\begin{document}
+\maketitle
+
+
+\begin{terminology}
+    \item What does it mean to say that a region in the plane is \textit{convex}?
+    \item If $P$ is a point in the plane, then what does it mean to say that a region in the plane is $P$-symmetric?
+\end{terminology}
+
+\numerical
+
+\begin{problem}
+    Sketch regions that are: \begin{tabular}{ll}
+        convex and $O$-symmetric; & convex but not $O$-symmetric \\ $O$-symmetric but not conbex; & neither convex nor $O$-symmetric \\
+    \end{tabular}
+\end{problem}
+
+\begin{problem}
+    For which primes $p$ is $\legendre{3}{p} = 1$? What if $3$ is replaced by $-3, 5, -5, 6$, or $-6$? Any patterns? Is $\legendre{n}{p} = 1$ equivalent to some congruences for $p\bmod 4n$? How many congruences are involved?
+\end{problem}
+
+\exploration
+
+\begin{problem}
+    Suppose $(n/p)=1$ and consider the following procedure. Choose $x \in\U_p$ at random and check if $x^2=a$. If not, then compute $z:= (x+y)^{(p-1)/2}$ in the ring $\Z_p[y]_{y^2-a}$. Write $z$ in the form $u+vy$ where $u,v\in\Z_p$. If $u=0$, we can use $z$ to compute $\sqrt{a}$ in $\U_p$. How? And, more importantly, how often is $u=0$ (given a random choice for $x$)?
+\end{problem}
+
+\begin{problem}
+    Suppose $\displaystyle g(n)=\sum_{d|n} f(d)$. Write these sums out explicitly for $n=1,2,\dots,12$. How can we reverse this, and express $f$ in terms of the values of $g$? To start, express each value $f(1),f(2),\dots,f(12)$ as a combination of values of $g$. What patterns do you observe? Any conjectures?
+\end{problem}
+
+\podasip
+
+\begin{problem}
+    Suppose $p$ is a prime. If $a\equiv 1 \pmod{p^k}$, then $a^p \equiv 1 \pmod{p^{k+1}}$. Conversely, if $a^p \equiv 1\pmod{p^{k}}$.
+\end{problem}
+
+\begin{problem}
+    If $p$ is prime, then $(1+p)^{p^2}\equiv 1 \pmod{p^3}$. Does $\ord_{p^3}(1+p) = p^2$?
+\end{problem}
+
+\begin{problem}
+    Define $p^* = (-1)^{(p-1)/2} p$. If $p,q$ are primes, then: $\legendre{q}{p} = \legendre{p^*}{q}$
+\end{problem}
+
+\begin{problem}
+    Suppose $p$ is a rational prime.
+    \begin{subproblem}
+        \item If $p\equiv 3 \pmod 4$, then $p$ is a Gaussian prime.
+        \item If $p\equiv 1 \pmod 4$, then $p$ is not a Gaussian prime.
+    \end{subproblem}
+    \hint{Recall \textbf{Set \#18 Podasip 11.}}
+\end{problem}
+
+\begin{problem}
+    A prime number $p$ can be expressed as $p=x^2+y^2$ in $\Z$ if and only if $p\equiv 1 \pmod 4$.
+    
+    \hint{How does this follow from \textbf{Podasip 8}?}
+\end{problem}
+
+\begin{problem}
+    For $f(x) \in \Z_p[x]$, define $N(f) = $ the number of elements in $\Z_p[x]_{f(x)}$. Then $N(fg) = N(f)N(g)$. Define $\varphi(f)$. Then
+    \[\varphi(\pi^m) = N(\pi)^m - N(\pi)^{m-1}\]
+    for any prime $\pi\in\Z_p[x]$. Is this $\varphi$ multiplicative?
+\end{problem}
+
+\begin{problem}
+    Suppose $\mathcal S$ is convex and $O$-symmetric with $\mathrm{Area}(\mathcal S)>4$. Then $\mathcal S$ contains some non-zero lattice point.
+
+    \hint{Compare \textbf{Set \#19 Podasip 7.}}
+\end{problem}
+
+
+
+
+
+\end{document}
