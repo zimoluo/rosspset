@@ -169,9 +169,9 @@
 
 \newcommand{\sectionheader}[1]{\par\noindent{\sffamily\textbf{#1}}\titlerule[0.025pc]\par}
 
-\newcommand{\exploration}{\section{Exploration}}
-\newcommand{\podasip}{\section{Podasip}}
-\newcommand{\numerical}{\section{Numerical}}
+\newcommand{\exploration}{\sectionheader{Exploration}}
+\newcommand{\podasip}{\sectionheader{Podasip}}
+\newcommand{\numerical}{\sectionheader{Numerical}}
 
 \newcounter{problemnum}
 
