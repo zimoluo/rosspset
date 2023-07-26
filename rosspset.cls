@@ -167,7 +167,6 @@
 \renewcommand{\headrulewidth}{0pt} 
 \renewcommand{\footrulewidth}{0pt} 
 
-% Deprecated
 \newcommand{\sectionheader}[1]{\par\noindent{\sffamily\textbf{#1}}\titlerule[0.025pc]\par}
 
 \newcommand{\exploration}{\section{Exploration}}
@@ -207,13 +206,16 @@ Here are some terminology questions to discuss with your family:
     {\small [#1]}
 }
 
+% Experimental
 \titleformat{\section}[runin]
-  {\vspace{-1em}\sffamily\bfseries}
+  {\sffamily\bfseries}
   {\sffamily\bfseries}
   {0em}
   {}
-  [{\titlerule[0.025pc]\\\vspace{-1em}}]
+  [{\titlerule[0.025pc]}]
 
 \renewcommand{\thesection}{}
+
+\titlespacing{\section}{0pt}{\parskip}{\parskip}
 
 \endinput
