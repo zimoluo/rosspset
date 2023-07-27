@@ -120,7 +120,7 @@
 \newcommand{\vectriple}[3]{\displaystyle\begin{bmatrix}#1 \\ #2 \\ #3 \end{bmatrix}}
 \newcommand{\vect}[3]{\vectriple{#1}{#2}{#3}}
 
-\geometry{left = 1in, right = 1in, top = 0.6in, bottom = 0.6in, a4paper, portrait}
+\geometry{left = 1in, right = 1in, top = 0.6in, bottom = 0.6in, portrait}
 
 \newcommand{\psetnum}[1]{\gdef\@psetnum{#1}}
 
@@ -177,7 +177,7 @@
 
 \newenvironment{problem}{
   \vspace{-0.25em}
-  \begin{enumerate}[label=\sffamily\textbf{\theproblemnum.}, left=0pt]
+  \begin{enumerate}[label=\sffamily\textbf{\theproblemnum.}, left=-0.5pt]
   \refstepcounter{problemnum}
   \item
 }{
